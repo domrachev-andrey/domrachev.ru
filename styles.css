@@ -1,3 +1,15 @@
+.index-item{
+	clear: both;
+}
+
 .index-item-left{
 	float: left;
+}
+
+.index-item-right{
+	float: right;
+}
+
+.main-footer{
+	clear: both;
 }
