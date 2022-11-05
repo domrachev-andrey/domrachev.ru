@@ -4,6 +4,12 @@
 	margin: 0 auto;
 }
 
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .main-navigation-logo{
 	min-height: 70px;
 	float: left;
@@ -12,6 +18,14 @@
 .main-navigation{
 	min-height: 70px;
 	float: left;
+}
+
+.main-navigation-list{
+	list-style-type: none;
+}
+
+.main-navigation-list li{
+	display: inline-block;
 }
 
 .main-navigation-callback{
