@@ -4,21 +4,28 @@
 	margin: 0 auto;
 }
 
+.main-navigation-logo{
+	font-weight: 700;
+	font-size: 26px;
+	float: left;
+}
+
+.main-navigation-logo a {
+	text-decoration: none;
+	color: #000;
+}
+
 .clearfix::after{
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.main-navigation-logo{
-	min-height: 70px;
-	float: left;
-}
-
 .main-navigation{
-	min-height: 70px;
-	float: left;
-}
+/*	min-height: 70px;
+*/	float: left;
+/*	padding-top: 0;
+*/}
 
 .main-navigation-list{
 	list-style-type: none;
@@ -28,9 +35,15 @@
 	display: inline-block;
 }
 
+.main-navigation-list li a{
+	text-decoration: none;
+	color: #000;
+}
+
+
 .main-navigation-callback{
-	min-height: 70px;
-	float: right;
+/*	min-height: 70px;
+*/	float: right;
 }
 
 .index-slider{
@@ -51,4 +64,16 @@
 
 .main-footer{
 	clear: both;
+}
+
+.footer-company{
+	float: left;
+}
+
+.footer-contacts{
+	float: left;
+}
+
+.footer-social{
+	float: right;
 }
