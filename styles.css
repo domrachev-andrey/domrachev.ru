@@ -1,3 +1,28 @@
+.container{
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.main-navigation-logo{
+	min-height: 70px;
+	float: left;
+}
+
+.main-navigation{
+	min-height: 70px;
+	float: left;
+}
+
+.main-navigation-callback{
+	min-height: 70px;
+	float: right;
+}
+
+.index-slider{
+	clear: both;
+}
+
 .index-item{
 	clear: both;
 }
