@@ -5,6 +5,7 @@
 }
 
 .main-navigation-logo{
+	min-height: 70px;
 	font-weight: 700;
 	font-size: 26px;
 	float: left;
@@ -22,8 +23,10 @@
 }
 
 .main-navigation{
-/*	min-height: 70px;
-*/	float: left;
+	min-height: 70px;
+	float: left;
+	display: flex;
+	align-items: center;
 /*	padding-top: 0;
 */}
 
@@ -40,10 +43,16 @@
 	color: #000;
 }
 
-
 .main-navigation-callback{
-/*	min-height: 70px;
-*/	float: right;
+	min-height: 70px;
+	float: right;
+	display: flex;
+	align-items: center;
+}
+
+.main-navigation-callback a{
+	text-decoration: none;
+	color: #000;
 }
 
 .index-slider{
