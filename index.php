@@ -7,8 +7,10 @@
 	<title>1С Франчайзи Домрачев консалтинг</title>
 </head>
 <body>
-	<h2>1С Франчайзи Домрачев консалтинг</h2>	
-	<p>+7(499)793-69-71</p>
-	<p>1c@domrachev.ru</p>
+	<header class="main-header">
+		
+	</header>
+
+
 </body>
 </html>
