@@ -35,8 +35,7 @@ body{
 	float: left;
 	display: flex;
 	align-items: center;
-/*	padding-top: 0;
-*/}
+}
 
 .main-navigation-list{
 	list-style-type: none;
@@ -51,12 +50,12 @@ body{
 	color: #000;
 }
 
-.dropdown {
+.dropdown{
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -66,8 +65,18 @@ body{
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
     display: block;
+}
+
+.dropdown-content ul{
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown-content li{
+	display: list-item;
+	list-style-type: none;
 }
 
 .main-navigation-callback{
@@ -97,8 +106,6 @@ body{
 .index-item-left{
 	float: left;
 }
-
-
 
 .index-item-right{
 	float: right;
