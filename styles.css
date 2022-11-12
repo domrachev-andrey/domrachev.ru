@@ -125,6 +125,16 @@ body{
 	float: left;
 }
 
+.footer-contacts a{
+	text-decoration: none;
+	color: #000;
+}
+
 .footer-social{
 	float: right;
+}
+
+.footer-social a{
+	text-decoration: none;
+	color: #000;	
 }
