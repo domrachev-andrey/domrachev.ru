@@ -92,6 +92,53 @@ body{
 	color: #000;
 }
 
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-window{
+	position: relative;
+	z-index: 2;
+	width: 550px;
+	border-radius: 10px;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+	background-color: #fff;
+	padding: 30px;
+}
+
+.modal .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	widows: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 0;
+}
+
+.close{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	border: none;
+	background: none;
+	opacity: 0.7;
+}
+
+.close:hover{
+	opacity: 1;
+}
+
 .index-slider{
 	clear: both;
 	width: 600px;
@@ -153,3 +200,4 @@ body{
 	text-decoration: none;
 	color: #000;	
 }
+
