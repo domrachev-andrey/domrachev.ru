@@ -97,6 +97,7 @@
 							<input type="text" placeholder="Телефон" name="phone" required>
 							<input type="text" placeholder="E-mail" name="email" required>
 							<textarea placeholder="Когда удобно? Опишите кратко вопросы, которые хотите обсудить" name="details" required></textarea>
+							<button class="sendorder">Заказать звонок</button>
 							<button onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть">X</button>
 						</div>
 						<div class="overlay">
@@ -161,6 +162,11 @@
 				modal.style.display = "none";
 			}
 		}
+
+		var link = document.querySelector(".sendorder");
+		link.addEventListener("click", function() {
+			console.log("Клик по кнопке");
+		});
 	</script>
 </body>
 </html>
