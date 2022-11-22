@@ -97,6 +97,7 @@
 							<input type="text" placeholder="Телефон" name="phone" required>
 							<input type="text" placeholder="E-mail" name="email" required>
 							<textarea placeholder="Когда удобно? Опишите кратко вопросы, которые хотите обсудить" name="details" required></textarea>
+							<input type="checkbox" checked="checked">Согласен с обработкой персональных данных
 							<button class="sendorder">Заказать звонок</button>
 							<button onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть">X</button>
 						</div>
