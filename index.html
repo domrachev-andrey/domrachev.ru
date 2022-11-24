@@ -92,14 +92,16 @@
 					<button onclick="document.getElementById('id01').style.display='flex'">Заказать звонок</button>
 					<div id="id01" class="modal">
 						<div class="modal-window">
-							<h1>Заказать звонок</h1>
-							<input type="text" placeholder="Ваше имя" name="name" required>
-							<input type="text" placeholder="Телефон" name="phone" required>
-							<input type="text" placeholder="E-mail" name="email" required>
-							<textarea placeholder="Когда удобно? Опишите кратко вопросы, которые хотите обсудить" name="details" required></textarea>
-							<input type="checkbox" checked="checked">Согласен с обработкой персональных данных
-							<button class="sendorder">Заказать звонок</button>
-							<button onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть">X</button>
+							<form action="#">
+								<h1>Заказать звонок</h1>
+								<input type="text" placeholder="Ваше имя" name="name" required>
+								<input type="text" placeholder="Телефон" name="phone" required>
+								<input type="text" placeholder="E-mail" name="email" required>
+								<textarea cols="5" rows="5" placeholder="Когда удобно? Опишите кратко вопросы, которые хотите обсудить" name="details" required></textarea>
+								<input type="checkbox" checked="checked">Согласен с обработкой персональных данных
+								<button type="submit" class="sendorder">Заказать звонок</button>
+								<button onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть">X</button>
+							</form>
 						</div>
 						<div class="overlay">
 						</div>	
@@ -167,6 +169,9 @@
 		var link = document.querySelector(".sendorder");
 		link.addEventListener("click", function() {
 			console.log("Клик по кнопке");
+		});
+		link.addEventListener("click", function() {
+			console.log("Клик по кнопке submit");
 		});
 	</script>
 </body>
