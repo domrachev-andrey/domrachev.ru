@@ -171,10 +171,10 @@
 		}
 
 		var link = document.querySelector(".formsendorder");
-		link.addEventListener("submit", function(event) {
+		link.addEventListener("submit", function(event){
 			event.preventDefault();
 			func_js();
-			console.log("Клик по кнопке submit");
+			modal.style.display = "none";
 		});
 	</script>
 	<?php
