@@ -92,7 +92,7 @@
 					<button onclick="document.getElementById('id01').style.display='flex'">Заказать звонок</button>
 					<div id="id01" class="modal">
 						<div class="modal-window">
-							<form action="#">
+							<form class="formsendorder" action="#">
 								<h1>Заказать звонок</h1>
 								<input type="text" placeholder="Ваше имя" name="name" required>
 								<input type="text" placeholder="Телефон" name="phone" required>
@@ -166,11 +166,14 @@
 			}
 		}
 
-		var link = document.querySelector(".sendorder");
-		link.addEventListener("click", function() {
+		var link = document.querySelector(".formsendorder");
+/*		link.addEventListener("click", function(event) {
+			event.preventDefault();
 			console.log("Клик по кнопке");
-		});
-		link.addEventListener("click", function() {
+		});*/
+		link.addEventListener("submit", function(event) {
+			console.log("Клик");
+			event.preventDefault();
 			console.log("Клик по кнопке submit");
 		});
 	</script>
