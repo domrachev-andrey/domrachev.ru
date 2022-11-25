@@ -186,7 +186,7 @@
 			if (!empty($phone) && !empty($email)){
 				$name = $_GET['name'];
 				$details = $_GET['details'];
-				$message = 'Имя: ' . $name .'\r\n'. 'Телефон: ' . $phone .'\r\n'. 'e-mail: ' . $email .'\r\n'. 'Детали: ' . $details;
+				$message = 'Имя: ' . $name .chr(13).chr(10). 'Телефон: ' . $phone .chr(13).chr(10). 'e-mail: ' . $email .chr(13).chr(10). 'Детали: ' . $details .chr(13).chr(10);
 				mail('1c@domrachev.ru', 'From site', $message);
 			}
 		}
