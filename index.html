@@ -96,7 +96,7 @@
 								<h1>Заказать звонок</h1>
 								<input type="text" placeholder="Ваше имя" name="name" required>
 								<input type="text" placeholder="Телефон" name="phone" required>
-								<input type="text" placeholder="E-mail" name="email" required>
+								<input id="email" type="text" placeholder="E-mail" name="email" required>
 								<textarea cols="5" rows="5" placeholder="Когда удобно? Опишите кратко вопросы, которые хотите обсудить" name="details" required></textarea>
 								<input type="checkbox" checked="checked">Согласен с обработкой персональных данных
 								<button type="submit" class="sendorder">Заказать звонок</button>
@@ -167,7 +167,8 @@
 		}
 
 		function func_js(){
-			var a = "<?php func_php(); ?>";
+			var email = document.getElementById('email').value);
+			var a = "<?php func_php("+ email +"); ?>";
 		}
 
 		var link = document.querySelector(".formsendorder");
@@ -178,7 +179,7 @@
 		});
 	</script>
 	<?php
-		function func_php(){
+		function func_php($email){
 			mail('1c@domrachev.ru', 'From site', 'From site');
 		}
 	?>	
