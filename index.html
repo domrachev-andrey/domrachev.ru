@@ -181,12 +181,14 @@
 		<?php
 		function func_php(){
 			var_dump($_GET);
-			$name = $_GET['name'];
 			$phone = $_GET['phone'];
 			$email = $_GET['email'];
-			$details = $_GET['details'];
-			$message = $name .'\n'. $phone .'\n'. $email .'\n'. $details;
-			mail('1c@domrachev.ru', 'From site', $message);
+			if (!empty($phone) && !empty($email)){
+				$name = $_GET['name'];
+				$details = $_GET['details'];
+				$message = 'Имя: ' . $name .'\r\n'. 'Телефон: ' . $phone .'\r\n'. 'e-mail: ' . $email .'\r\n'. 'Детали: ' . $details;
+				mail('1c@domrachev.ru', 'From site', $message);
+			}
 		}
 		?>	
 	</script>
